@@ -1,0 +1,15 @@
+
+int main(int argc, char* argv[]) {
+    // Extract command-line arguments
+    int seed = stoi(argv[1]);
+    int cols = stoi(argv[2]);
+    int rows = stoi(argv[3]);
+    string outfile = argv[4];
+    
+    // Create a Maze object and generate the maze
+    Maze maze(rows, cols, seed);
+    maze.genMaze(outfile);
+
+    // Exit the program
+    return 0;
+}
